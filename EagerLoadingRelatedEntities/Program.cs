@@ -93,9 +93,9 @@ namespace EagerLoadingRelatedEntities
                     In the following foreach construct, we perform the exact same operation, but using strongly typed query paths.
                     Note here how we use lambda expressions to identify each of the related entities. The strongly typed usage provides us
                     with both IntelliSense, compile-time safety and refactoring support.
-
-                    is generated from usage of the Include() method. Entity
-                    Framework automatically removes data that is duplicated by the query
+                    
+                    Entity Framework automatically removes data that is duplicated by the query, before the result is
+                    materialized and sent back to the application
                  */
             }
         }
