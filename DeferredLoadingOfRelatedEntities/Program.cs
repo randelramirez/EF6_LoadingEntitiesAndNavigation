@@ -59,6 +59,14 @@ namespace DeferredLoadingOfRelatedEntities
                 Console.WriteLine("{0} works in {1} for {2}",
                 jill.Name, jill.Department.Name, jill.Department.Company.Name);
             }
+            /*
+                In the second query, we use the Entry() method exposed by the DbContext object to access the Employee object
+                and perform operations against it. We then chain the Reference() and Query() methods from the DbReferenceEntity
+                class to return a query to load the related Department object from the underlying data store. Additionally, we chain
+                the Include() method to pull in the related Company information. As desired, this query retrieves both Department
+                and Company data without needlessly requerying the data store for Employees data, which has already been loaded
+                into the context. 
+            */
 
             Console.ReadKey();
         }
