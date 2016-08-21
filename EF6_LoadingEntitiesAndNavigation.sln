@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadingNavigationProperties
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingIncludeWithOtherLINQQueryOperators", "UsingIncludeWithOtherLINQQueryOperators\UsingIncludeWithOtherLINQQueryOperators.csproj", "{C3535E09-7A56-4635-A5C1-5721054AD3DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeferredLoadingOfRelatedEntities", "DeferredLoadingOfRelatedEntities\DeferredLoadingOfRelatedEntities.csproj", "{7E00B8B7-E980-4AC3-9945-AB97C053B2EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{C3535E09-7A56-4635-A5C1-5721054AD3DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3535E09-7A56-4635-A5C1-5721054AD3DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3535E09-7A56-4635-A5C1-5721054AD3DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E00B8B7-E980-4AC3-9945-AB97C053B2EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E00B8B7-E980-4AC3-9945-AB97C053B2EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E00B8B7-E980-4AC3-9945-AB97C053B2EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E00B8B7-E980-4AC3-9945-AB97C053B2EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

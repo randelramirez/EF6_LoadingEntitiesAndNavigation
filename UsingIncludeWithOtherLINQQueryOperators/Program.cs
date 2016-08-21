@@ -4,6 +4,11 @@ using System.Linq;
 
 namespace UsingIncludeWithOtherLINQQueryOperators
 {
+    /*
+        You have a LINQ query that uses operators such as group by, join, and where; and you want to use the Include()
+        method to eagerly load additional entities. 
+    */
+
     class Program
     {
         static void Main(string[] args)
@@ -66,7 +71,6 @@ namespace UsingIncludeWithOtherLINQQueryOperators
                 LINQ queries—breaking a more complex LINQ query into a series of smaller queries, where the variable of the
                 preceding query is in the source of the query.
 
-                
              */
 
             Console.ReadKey();
