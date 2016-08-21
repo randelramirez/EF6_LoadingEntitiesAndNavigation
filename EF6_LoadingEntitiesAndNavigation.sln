@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryingIn-MemoryEntities",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadingACompleteObjectGraph", "LoadingACompleteObjectGraph\LoadingACompleteObjectGraph.csproj", "{7F128890-7C9A-4F52-8963-08697382BF6E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadingNavigationPropertiesOnDerivedTypes", "LoadingNavigationPropertiesOnDerivedTypes\LoadingNavigationPropertiesOnDerivedTypes.csproj", "{6B715874-1861-497C-B70A-F53CE81F2031}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{7F128890-7C9A-4F52-8963-08697382BF6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F128890-7C9A-4F52-8963-08697382BF6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F128890-7C9A-4F52-8963-08697382BF6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B715874-1861-497C-B70A-F53CE81F2031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B715874-1861-497C-B70A-F53CE81F2031}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B715874-1861-497C-B70A-F53CE81F2031}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B715874-1861-497C-B70A-F53CE81F2031}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
