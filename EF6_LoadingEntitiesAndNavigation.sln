@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadingACompleteObjectGraph
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadingNavigationPropertiesOnDerivedTypes", "LoadingNavigationPropertiesOnDerivedTypes\LoadingNavigationPropertiesOnDerivedTypes.csproj", "{6B715874-1861-497C-B70A-F53CE81F2031}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingIncludeWithOtherLINQQueryOperators", "UsingIncludeWithOtherLINQQueryOperators\UsingIncludeWithOtherLINQQueryOperators.csproj", "{C3535E09-7A56-4635-A5C1-5721054AD3DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{6B715874-1861-497C-B70A-F53CE81F2031}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B715874-1861-497C-B70A-F53CE81F2031}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B715874-1861-497C-B70A-F53CE81F2031}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3535E09-7A56-4635-A5C1-5721054AD3DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3535E09-7A56-4635-A5C1-5721054AD3DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3535E09-7A56-4635-A5C1-5721054AD3DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3535E09-7A56-4635-A5C1-5721054AD3DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
