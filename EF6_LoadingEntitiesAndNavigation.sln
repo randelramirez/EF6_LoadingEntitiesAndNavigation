@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LazyLoading", "LazyLoading\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EagerLoadingRelatedEntities", "EagerLoadingRelatedEntities\EagerLoadingRelatedEntities.csproj", "{6E3E951D-EE9C-436D-B70B-05BD36BD6F86}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingSingleEntitiesQuickly", "FindingSingleEntitiesQuickly\FindingSingleEntitiesQuickly.csproj", "{9F4F2DBE-4C46-42EB-879C-A9B9BC2FDEC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryingIn-MemoryEntities", "QueryingIn-MemoryEntities\QueryingIn-MemoryEntities.csproj", "{A4455510-20D3-48C5-B34B-940C1714CE36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{6E3E951D-EE9C-436D-B70B-05BD36BD6F86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E3E951D-EE9C-436D-B70B-05BD36BD6F86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E3E951D-EE9C-436D-B70B-05BD36BD6F86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F4F2DBE-4C46-42EB-879C-A9B9BC2FDEC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F4F2DBE-4C46-42EB-879C-A9B9BC2FDEC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F4F2DBE-4C46-42EB-879C-A9B9BC2FDEC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F4F2DBE-4C46-42EB-879C-A9B9BC2FDEC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4455510-20D3-48C5-B34B-940C1714CE36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4455510-20D3-48C5-B34B-940C1714CE36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4455510-20D3-48C5-B34B-940C1714CE36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4455510-20D3-48C5-B34B-940C1714CE36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
