@@ -52,7 +52,9 @@ namespace FilteringAndOrderingRelatedEntities
 
             using (var context = new DataContext())
             {
+                // https://msdn.microsoft.com/en-us/data/jj574232.aspx#explicitFilter
                 context.Configuration.LazyLoadingEnabled = false;
+                
                 // Assume we have an instance of hotel
                 var hotel = context.Hotels.First();
 
