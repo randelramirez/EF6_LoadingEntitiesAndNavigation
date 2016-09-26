@@ -52,13 +52,7 @@ namespace FilteringAndOrderingRelatedEntities
 
             using (var context = new DataContext())
             {
-                var e = context.Rooms.Include(b => b.Hotel);
-                var y = context.Rooms.Where(r => r.Reservations.Any());
-
-            }
-
-            using (var context = new DataContext())
-            {
+                context.Configuration.LazyLoadingEnabled = false;
                 // Assume we have an instance of hotel
                 var hotel = context.Hotels.First();
 
@@ -74,6 +68,25 @@ namespace FilteringAndOrderingRelatedEntities
                 Console.WriteLine("Executive Suites for {0} with reservations", hotel.Name);
 
                 foreach (var room in hotel.Rooms)
+                {
+                    Console.WriteLine("\nExecutive Suite {0} is {1} per night", room.Id,
+                                      room.Rate.ToString("C"));
+                    Console.WriteLine("Current reservations are:");
+                    foreach (var res in room.Reservations.OrderBy(r => r.StartDate))
+                    {
+                        Console.WriteLine("\t{0} thru {1} ({2})", res.StartDate.ToShortDateString(),
+                                          res.EndDate.ToShortDateString(), res.ContactName);
+                    }
+                }
+            }
+
+            using (var context = new DataContext())
+            {
+                var q = context.Hotels.Select(h => new { Hotel = h, Rooms = h.Rooms.Where(r =>  r is ExecutiveSuite && r.Reservations.Any()) }).First();
+
+                Console.WriteLine("Executive Suites for {0} with reservations", q.Hotel.Name);
+
+                foreach (var room in q.Rooms)
                 {
                     Console.WriteLine("\nExecutive Suite {0} is {1} per night", room.Id,
                                       room.Rate.ToString("C"));
