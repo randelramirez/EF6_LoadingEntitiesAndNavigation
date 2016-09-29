@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeferredLoadingOfRelatedEnt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilteringAndOrderingRelatedEntities", "FilteringAndOrderingRelatedEntities\FilteringAndOrderingRelatedEntities.csproj", "{8C15EBE2-45D2-41AD-B3BD-4472F86F70A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AggregateOperationsOnRelatedEntities", "AggregateOperationsOnRelatedEntities\AggregateOperationsOnRelatedEntities.csproj", "{4E51CEE8-4564-4706-AA67-F2FD3FC450ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{8C15EBE2-45D2-41AD-B3BD-4472F86F70A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C15EBE2-45D2-41AD-B3BD-4472F86F70A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C15EBE2-45D2-41AD-B3BD-4472F86F70A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E51CEE8-4564-4706-AA67-F2FD3FC450ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E51CEE8-4564-4706-AA67-F2FD3FC450ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E51CEE8-4564-4706-AA67-F2FD3FC450ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E51CEE8-4564-4706-AA67-F2FD3FC450ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
