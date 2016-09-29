@@ -85,16 +85,31 @@ namespace FilteringAndOrderingRelatedEntities
 
             using (var context = new DataContext())
             {
-                var q = context.Hotels.Select(h => new { Hotel = h, Rooms = h.Rooms.Where(r => r is ExecutiveSuite && r.Reservations.Any()) }).First();
+                // works the same if lazy loading is enabled
+                context.Configuration.LazyLoadingEnabled = false;
+
+                var q = context.Hotels.Select(h =>
+                new
+                {
+                    Hotel = h,
+                    RoomsAndReservations = h.Rooms.Where(r => r is ExecutiveSuite && r.Reservations.Any())
+                    .Select(b =>
+                    new
+                    {
+                        Rooms = b,
+                        Reservations = b.Reservations
+                    })
+                }).First();
 
                 Console.WriteLine("Executive Suites for {0} with reservations", q.Hotel.Name);
 
-                foreach (var room in q.Rooms)
+
+                foreach (var room in q.RoomsAndReservations)
                 {
-                    Console.WriteLine("\nExecutive Suite {0} is {1} per night", room.Id,
-                                      room.Rate.ToString("C"));
+                    Console.WriteLine("\nExecutive Suite {0} is {1} per night", room.Rooms.Id,
+                                      room.Rooms.Rate.ToString("C"));
                     Console.WriteLine("Current reservations are:");
-                    foreach (var res in room.Reservations.OrderBy(r => r.StartDate))
+                    foreach (var res in room.Reservations.OrderBy(b => b.StartDate))
                     {
                         Console.WriteLine("\t{0} thru {1} ({2})", res.StartDate.ToShortDateString(),
                                           res.EndDate.ToShortDateString(), res.ContactName);
